@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script/script.js"></script>
+    <title>Онлайн калькулятор валют</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Сконвертируйте нужную вам валюту онлайн!</h1>
+      <select name="valute" id="valute" class="valute">
+        <option value="USD">Доллар США (USD)</option>
+        <option value="EUR">Евро (EUR)</option>
+      </select>
+      <div class="converter">
+        <form class="next form" name="rub">
+          <div class="wrap">
+            <div class="bl">
+              <div class="name-val block">Доллар США (USD)</div>
+              <input
+                type="tel"
+                class="start input"
+                placeholder="Введите число"
+              />
+            </div>
+            <div class="bl">
+              <div class="name block">Российский рубль</div>
+              <input type="tel" class="conv input" disabled />
+            </div>
+          </div>
+          <button type="submit" class="button button-submit-o">
+            Конвертировать
+          </button>
+        </form>
+
+        <form class="prev form" name="external">
+          <div class="wrap">
+            <div class="bl">
+              <div class="name block">Российский рубль</div>
+              <input
+                type="tel"
+                class="start input"
+                placeholder="Введите число"
+              />
+            </div>
+            <div class="bl">
+              <div class="name-val block">Доллар США (USD)</div>
+              <input type="tel" class="conv input" disabled />
+            </div>
+          </div>
+          <button type="submit" class="button button-submit-t">
+            Конвертировать
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
